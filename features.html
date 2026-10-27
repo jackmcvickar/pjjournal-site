@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6815332769, affiliate-data=pt=129453941&amp;ct=website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PJ Journal Features — everything PJ does</title>
+<meta name="description" content="Everything PJ Journal does today: talk or type, Apple Watch capture, start from a photo, On this day, pin, print and export, import an old journal, Private mode, encrypted backups and more.">
+<link rel="icon" type="image/png" sizes="32x32" href="pj-favicon-32.png">
+<link rel="apple-touch-icon" href="pj-apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pj:#5040c0;--pj-2:#6a4ad0;--ink:#1b1a24;--muted:#5c5a6e;--bg:#ffffff;--bg-soft:#f5f4fb;
+    --card:#ffffff;--line:#e7e5f2;--shadow:0 6px 24px rgba(40,30,100,.08);--maxw:800px}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f1f0f7;--muted:#a9a7bd;
+    --bg:#131220;--bg-soft:#1a1930;--card:#1c1b2e;--line:#2c2a44;--shadow:0 8px 30px rgba(0,0,0,.35);--pj-2:#8b70ef}}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo-word{font-family:"Poppins",-apple-system,sans-serif}
+  a{color:var(--pj-2);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1060px;margin:0 auto;padding:0 20px}
+  .logo{display:flex;align-items:center;gap:10px}.logo img{height:34px;width:auto;display:block}
+  nav a{color:var(--ink);font-weight:600;font-size:15.5px;margin-left:22px}nav a:hover{color:var(--pj-2);text-decoration:none}
+  .logo img.dark-logo{display:none}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo img.light-logo{display:none}
+    :root:not([data-theme="light"]) .logo img.dark-logo{display:block}}
+  h1{font-size:clamp(32px,5vw,46px);letter-spacing:-.02em;margin:46px 0 6px}
+  .intro{color:var(--muted);margin:0 0 30px;font-size:19px}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:14px 0;box-shadow:var(--shadow)}
+  .q h2{font-size:20px;margin:0 0 8px;letter-spacing:-.01em}
+  .q p{margin:0;color:var(--muted);font-size:16.5px}
+  .q p + p{margin-top:10px}
+  .callout{background:color-mix(in srgb,var(--pj) 9%,var(--card));border:1px solid var(--line);border-left:4px solid var(--pj);border-radius:12px;padding:16px 18px;margin:16px 0;color:var(--ink);font-size:16px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pj);color:#fff !important;font-family:"Poppins";font-weight:600;font-size:16px;padding:12px 22px;border-radius:999px;box-shadow:var(--shadow)}
+  .cta:hover{background:var(--pj-2);text-decoration:none}
+  .backhome{display:inline-block;margin:34px 0 0;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:15px;margin-top:40px}
+  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;max-width:1060px;margin:0 auto;padding:0 20px}
+  .foot a{color:var(--muted);font-weight:600;margin-right:18px}.foot a:hover{color:var(--pj-2)}
+  @media (max-width:560px){
+    .bar{height:56px}
+    .logo img{height:25px}
+    nav a{margin-left:15px;font-size:14px}
+    nav .nav-full{display:none}
+  }
+  h2.group{font-size:26px;margin:44px 0 4px;letter-spacing:-.015em}
+  .gsub{color:var(--muted);margin:0 0 12px}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .f h3{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+  .f p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  .plat{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:var(--pj-2);background:color-mix(in srgb,var(--pj) 10%,var(--card));border-radius:999px;padding:2px 10px}
+  @media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+</style>
+<meta property="og:title" content="PJ Journal Features — everything PJ does">
+<meta property="og:description" content="Everything PJ Journal does today: talk or type, Apple Watch capture, start from a photo, On this day, pin, print and export, import an old journal, Private mode, encrypted backups and more.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pjjournal.com/features.html">
+<meta property="og:url" content="https://pjjournal.com/features.html">
+<meta property="og:image" content="https://pjjournal.com/pj-og-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PJ Journal Features — everything PJ does">
+<meta name="twitter:description" content="Everything PJ Journal does today: talk or type, Apple Watch capture, start from a photo, On this day, pin, print and export, import an old journal, Private mode, encrypted backups and more.">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="/" aria-label="PJ Journal home">
+      <img class="light-logo" src="pj-logo.png" alt="PJ Journal"><img class="dark-logo" src="pj-logo-dark.png" alt="PJ Journal">
+    </a>
+    <nav><a href="/">Home</a><a href="faq.html">FAQ</a><a href="help.html">Help</a><a href="#join">Get<span class="nav-full"> PJ</span></a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Everything PJ does</h1>
+  <p class="intro">A private journal you can just talk to, on iPhone, iPad, Mac and Apple Watch. One purchase, no subscription, no ads.</p>
+  <h2 class="group">Capture</h2>
+  <p class="gsub">Just talk. Or type. Whatever's closest.</p>
+  <div class="fgrid">
+      <div class="f"><h3>Talk or type</h3><p>Say what's on your mind and PJ writes it down, or type it yourself. Your voice is turned into text right on your device, never sent anywhere to be transcribed.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Keep your voice, not just the words</h3><p>Your recording stays with the entry, so you can tap Listen to this and hear it again. On the Mac you can choose to keep only the words.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>From your wrist</h3><p>One button on your Apple Watch, hands-free, in the car or on a walk. Check my Watch shows what's on its way to your phone.</p><span class="plat">Apple Watch</span></div>
+      <div class="f"><h3>Start from a photo</h3><p>Pick a photo and write about it. PJ keeps a small copy with the location and camera details removed.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Start from a moment</h3><p>Turn Apple's journaling suggestions, like a place you visited or a song you played, into an entry. Who and where are included only if you say so.</p><span class="plat">iPhone · iPad</span></div>
+      <div class="f"><h3>Recordings are never lost</h3><p>A live timer on your Lock Screen, a nudge if you forgot to stop, and interrupted recordings saved safely. A recording still waiting for its words gets them with one tap.</p><span class="plat">iPhone · iPad</span></div>
+  </div>
+  <h2 class="group">Find it again</h2>
+  <p class="gsub">Your journal, organized the way you think.</p>
+  <div class="fgrid">
+      <div class="f"><h3>Timeline, calendar and labels</h3><p>Scroll your entries, see them by date, or sort them with your own labels.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Search</h3><p>Find any entry by what you said. Search runs on your device and never writes your words to a plain-text index.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>On this day</h3><p>See what you wrote on today's date in every year, or jump straight to your oldest or newest entry.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Pin to top</h3><p>Keep the entries that matter most right at the top.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Follow Up</h3><p>Start a new entry that links back to an earlier one, so a story can continue where it left off.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Tell entries apart at a glance</h3><p>Each row shows a photo thumbnail, the recording's length, or the word count.</p><span class="plat">iPhone · iPad · Mac</span></div>
+  </div>
+  <h2 class="group">Keep it safe</h2>
+  <p class="gsub">Private by design, with ways back if something goes wrong.</p>
+  <div class="fgrid">
+      <div class="f"><h3>Encrypted, in your own iCloud</h3><p>Your words, labels, recordings and photos are end-to-end encrypted on your device and synced only through your own iCloud. No accounts, no server, no ads, nothing collected.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Lock it</h3><p>Four numbers, Face ID or Touch ID. The lock covers your journal the instant you leave, even mid-entry, and you can still start a new entry while it's locked.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Private mode</h3><p>Put a passphrase over your whole journal for an extra layer only you can open.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Recovery key</h3><p>Your way back in on a new device, kept by you and nobody else.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Encrypted backups</h3><p>Back up your journal, encrypted with your key, and restore it when you need to.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Recently Deleted</h3><p>Deleted entries wait here until you bring them back or remove them for good.</p><span class="plat">iPhone · iPad · Mac</span></div>
+  </div>
+  <h2 class="group">Your words, never held hostage</h2>
+  <p class="gsub">Get your journal in, and get it out, whenever you want.</p>
+  <div class="fgrid">
+      <div class="f"><h3>Copy in one tap</h3><p>Copy an entry's words, with or without its date, to paste anywhere.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Print or save as PDF</h3><p>Print any entry, or save it as a PDF to keep or share.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Export everything</h3><p>Export your whole journal as plain text and web pages, readable anywhere, with or without PJ.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Bring in an old journal</h3><p>Import daily text files (a folder or a .zip). On the Mac, bring in a OneNote journal exported to Word. Importing only adds entries; nothing you have is changed.</p><span class="plat">iPhone · iPad · Mac</span></div>
+  </div>
+  <h2 class="group">Made for you</h2>
+  <p class="gsub">The little things that make it yours.</p>
+  <div class="fgrid">
+      <div class="f"><h3>A real Mac app</h3><p>Separate Talk, Write and Read views, and a text size that suits your screen.</p><span class="plat">Mac</span></div>
+      <div class="f"><h3>Pick your icon</h3><p>The PJ dragon, or a quieter look like Monogram, Pen nib, or a discreet light or dark icon.</p><span class="plat">iPhone · iPad</span></div>
+      <div class="f"><h3>Check my setup</h3><p>A quick check that iCloud and everything else is ready, so your journal syncs from day one.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Help when you need it</h3><p>An always-current guide, and Report a problem sends us your app version and device, never anything from your journal.</p><span class="plat">iPhone · iPad · Mac</span></div>
+  </div>
+  <!-- ADD ON 1.1 RELEASE DAY:
+    Made for you: "Pick your icon" -> add "plus seven service-color looks: Olive Drab, Dress Blue, Aviator Blue, Scarlet & Gold, Rescue Orange, Orbit Black and Navy & Gold."
+    Keep it safe: "Protect your journal" -> "PJ reminds you to save your recovery key, so your journal can always come back to you."
+  -->
+  <div class="callout" style="margin-top:40px">PJ is a journal: not a medical record, a monitoring tool, or a substitute for care. It's the place you keep your own words.</div>
+  <p style="margin-top:26px"><a class="cta" href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8" id="join">Get PJ on the App Store</a></p>
+  <a class="backhome" href="/">&larr; Back to pjjournal.com</a>
+</main>
+<footer>
+  <div class="foot">
+    <div><a href="/">Home</a><a href="features.html">Features</a><a href="help.html">Help &amp; guide</a><a href="privacy.html">Privacy</a><a href="mailto:support@pjjournal.com">support@pjjournal.com</a></div>
+    <div>© 2026 PJ Journal</div>
+  </div>
+</footer>
+</body>
+</html>
