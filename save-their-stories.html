@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6815332769, affiliate-data=pt=129453941&amp;ct=website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Save Their Stories in Their Own Voice — PJ Journal</title>
+<meta name="description" content="Record a parent’s or grandparent’s stories with PJ: hand them the phone, let them talk, and PJ writes it down and keeps their voice. Questions to ask, and tips for caregivers.">
+<link rel="icon" type="image/png" sizes="32x32" href="/pj-favicon-32.png">
+<link rel="apple-touch-icon" href="/pj-apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pj:#5040c0;--pj-2:#6a4ad0;--ink:#1b1a24;--muted:#5c5a6e;--bg:#ffffff;--bg-soft:#f5f4fb;
+    --card:#ffffff;--line:#e7e5f2;--shadow:0 6px 24px rgba(40,30,100,.08);--maxw:800px}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f1f0f7;--muted:#a9a7bd;
+    --bg:#131220;--bg-soft:#1a1930;--card:#1c1b2e;--line:#2c2a44;--shadow:0 8px 30px rgba(0,0,0,.35);--pj-2:#8b70ef}}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo-word{font-family:"Poppins",-apple-system,sans-serif}
+  a{color:var(--pj-2);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1060px;margin:0 auto;padding:0 20px}
+  .logo{display:flex;align-items:center;gap:10px}.logo img{height:34px;width:auto;display:block}
+  nav a{color:var(--ink);font-weight:600;font-size:15.5px;margin-left:22px}nav a:hover{color:var(--pj-2);text-decoration:none}
+  .logo img.dark-logo{display:none}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo img.light-logo{display:none}
+    :root:not([data-theme="light"]) .logo img.dark-logo{display:block}}
+  h1{font-size:clamp(32px,5vw,46px);letter-spacing:-.02em;margin:46px 0 6px}
+  .intro{color:var(--muted);margin:0 0 30px;font-size:19px}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:14px 0;box-shadow:var(--shadow)}
+  .q h2{font-size:20px;margin:0 0 8px;letter-spacing:-.01em}
+  .q p{margin:0;color:var(--muted);font-size:16.5px}
+  .q p + p{margin-top:10px}
+  .callout{background:color-mix(in srgb,var(--pj) 9%,var(--card));border:1px solid var(--line);border-left:4px solid var(--pj);border-radius:12px;padding:16px 18px;margin:16px 0;color:var(--ink);font-size:16px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pj);color:#fff !important;font-family:"Poppins";font-weight:600;font-size:16px;padding:12px 22px;border-radius:999px;box-shadow:var(--shadow)}
+  .cta:hover{background:var(--pj-2);text-decoration:none}
+  .backhome{display:inline-block;margin:34px 0 0;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:15px;margin-top:40px}
+  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;max-width:1060px;margin:0 auto;padding:0 20px}
+  .foot a{color:var(--muted);font-weight:600;margin-right:18px}.foot a:hover{color:var(--pj-2)}
+  @media (max-width:560px){
+    .bar{height:56px}
+    .logo img{height:25px}
+    nav a{margin-left:15px;font-size:14px}
+    nav .nav-full{display:none}
+  }
+  h2.group{font-size:26px;margin:44px 0 4px;letter-spacing:-.015em}
+  .gsub{color:var(--muted);margin:0 0 12px}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .f h3{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+  .f p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  .plat{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:var(--pj-2);background:color-mix(in srgb,var(--pj) 10%,var(--card));border-radius:999px;padding:2px 10px}
+  @media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+
+  .icons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:18px 0 8px}
+  .icon{text-align:center}.icon img{width:100%;max-width:120px;height:auto;display:block;margin:0 auto 8px;filter:drop-shadow(0 6px 14px rgba(40,30,100,.18))}
+  .icon span{font-family:"Poppins";font-weight:600;font-size:14.5px}
+  .icon small{display:block;color:var(--muted);font-size:13px}
+  @media (max-width:560px){.icons{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+  .strip{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.strip img{width:56px;height:56px}
+  .rel{border-left:3px solid var(--pj);padding:2px 0 2px 18px;margin:30px 0}
+  .rel h2{font-size:22px;margin:0 0 2px}.rel .when{color:var(--muted);font-size:15px;margin:0 0 10px}
+  .rel ul{margin:0;padding-left:20px}.rel li{margin:6px 0}
+  .lead{font-size:19px}
+  .crisis{margin-top:14px;font-size:15.5px;color:var(--muted)}
+
+  .hero2{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;margin:40px 0 10px}
+  .hero2 h1{margin-top:0}
+  .hero2 .shot{width:100%;max-width:300px;height:auto;justify-self:center;filter:drop-shadow(0 18px 36px rgba(40,30,100,.28))}
+  .cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+  .cta-note{color:var(--muted);font-size:15px}
+  @media (max-width:640px){.hero2{grid-template-columns:1fr;gap:18px;margin-top:28px}.hero2 .shot{max-width:220px}}
+</style>
+<link rel="canonical" href="https://pjjournal.com/save-their-stories.html">
+<meta property="og:title" content="Save Their Stories in Their Own Voice — PJ Journal">
+<meta property="og:description" content="Record a parent’s or grandparent’s stories with PJ: hand them the phone, let them talk, and PJ writes it down and keeps their voice. Questions to ask, and tips for caregivers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pjjournal.com/save-their-stories.html">
+<meta property="og:image" content="https://pjjournal.com/pj-og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Save Their Stories in Their Own Voice — PJ Journal">
+<meta name="twitter:description" content="Record a parent’s or grandparent’s stories with PJ: hand them the phone, let them talk, and PJ writes it down and keeps their voice. Questions to ask, and tips for caregivers.">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="/" aria-label="PJ Journal home">
+      <img class="light-logo" src="/pj-logo.png" alt="PJ Journal"><img class="dark-logo" src="/pj-logo-dark.png" alt="PJ Journal">
+    </a>
+    <nav><a href="/">Home</a><a href="/features.html">Features</a><a href="/faq.html" class="nav-full">FAQ</a><a href="/help.html">Help</a><a href="#join">Get<span class="nav-full"> PJ</span></a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero2"><div>
+  <h1>Save their stories, in their own voice</h1>
+  <p class="intro">Hand someone you love the phone and let them talk. PJ writes down every word and keeps the recording, so years from now you can still hear them tell it.</p>
+  <div class="cta-row"><a class="cta" href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8">Get PJ on the App Store</a><span class="cta-note">One purchase · every device · no subscription</span></div>
+  </div><img class="shot" src="/img/pj-app-timeline.png" alt="PJ on iPhone: a journal timeline with a Start talking button" width="520" height="1088"></div>
+
+  <h2 class="group">How to record someone</h2>
+  <p class="gsub">No setup, no account. It works at the kitchen table.</p>
+  <div class="fgrid">
+    <div class="f"><h3>1. Ask one question</h3><p>Open PJ, tap Start talking, and hand them the phone. One good question is enough to get going.</p></div>
+    <div class="f"><h3>2. Let them talk</h3><p>Don't interrupt and don't worry about typing. PJ writes the words down for you, right on your device.</p></div>
+    <div class="f"><h3>3. Keep their voice</h3><p>The recording stays with the entry. Tap Listen to this any time to hear it again.</p></div>
+    <div class="f"><h3>4. Keep their stories together</h3><p>Add a label with their name, and use Follow Up when they remember more later, so one story can continue where it left off.</p></div>
+    <div class="f"><h3>5. Start from a photo</h3><p>Pick an old photo and ask, "Tell me about this one." Photos bring back details nobody remembers on the spot.</p></div>
+    <div class="f"><h3>6. Ask first</h3><p>Tell them you're recording, and why. Let them hear it back. Most people love being asked.</p></div>
+  </div>
+
+  <h2 class="group">Questions that get people talking</h2>
+  <p class="gsub">Pick one. Save the rest for next time.</p>
+  <div class="q">
+    <p>What's your earliest memory?</p>
+    <p>What was the house you grew up in like? Walk me through it.</p>
+    <p>How did you meet Mom (or Dad, or your best friend)?</p>
+    <p>What was your first job, and what did it pay?</p>
+    <p>Tell me about a holiday you'll never forget.</p>
+    <p>Who taught you the most, and what did they teach you?</p>
+    <p>What were you doing when you were my age?</p>
+    <p>What's something you want the grandkids to know?</p>
+    <p>If you served: where were you stationed, and who were your friends there?</p>
+    <p>What are you proudest of?</p>
+  </div>
+
+  <h2 class="group">For caregivers</h2>
+  <p class="gsub">When you're looking after someone, a lot happens between appointments.</p>
+  <div class="fgrid">
+    <div class="f"><h3>Keep track of the days</h3><p>Talk for a minute at night about how today went: the good, the hard, what changed. Label it with their name so it's all in one place.</p></div>
+    <div class="f"><h3>Bring it to the appointment</h3><p>Print an entry or save it as a PDF to bring along, so nothing gets lost between visits.</p></div>
+  </div>
+  <div class="callout">PJ is a journal, not a medical record. It doesn't connect to doctors, health systems or anyone else; what you share is up to you.</div>
+
+  <h2 class="group">Private by design</h2>
+  <p class="gsub">Their words, recordings and photos are end-to-end encrypted, with a key only your devices hold. No account, no ads, nothing collected. One purchase covers iPhone, iPad, Mac and Apple Watch.</p>
+
+  <p style="margin-top:30px"><a class="cta" href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8" id="join">Get PJ on the App Store</a></p>
+  <a class="backhome" href="/">&larr; Back to pjjournal.com</a>
+</main>
+<footer>
+  <div class="foot">
+    <div><a href="/">Home</a><a href="/features.html">Features</a><a href="/military-families.html">Military families</a><a href="/save-their-stories.html">Save their stories</a><a href="/icons.html">Icons</a><a href="/whats-new.html">What&#39;s new</a><a href="/help.html">Help &amp; guide</a><a href="/privacy.html">Privacy</a><a href="mailto:support@pjjournal.com">support@pjjournal.com</a></div>
+    <div>© 2026 PJ Journal</div>
+  </div>
+</footer>
+</body>
+</html>

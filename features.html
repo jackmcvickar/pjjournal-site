@@ -55,6 +55,13 @@
   .f p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
   .plat{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:var(--pj-2);background:color-mix(in srgb,var(--pj) 10%,var(--card));border-radius:999px;padding:2px 10px}
   @media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+
+  .hero2{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;margin:40px 0 10px}
+  .hero2 h1{margin-top:0}
+  .hero2 .shot{width:100%;max-width:300px;height:auto;justify-self:center;filter:drop-shadow(0 18px 36px rgba(40,30,100,.28))}
+  .cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+  .cta-note{color:var(--muted);font-size:15px}
+  @media (max-width:640px){.hero2{grid-template-columns:1fr;gap:18px;margin-top:28px}.hero2 .shot{max-width:220px}}
 </style>
 <meta property="og:title" content="PJ Journal Features — everything PJ does">
 <meta property="og:description" content="Everything PJ Journal does today: talk or type, Apple Watch capture, start from a photo, On this day, pin, print and export, import an old journal, Private mode, encrypted backups and more.">
@@ -81,6 +88,7 @@
 <main class="wrap">
   <h1>Everything PJ does</h1>
   <p class="intro">A private journal you can just talk to, on iPhone, iPad, Mac and Apple Watch. One purchase, no subscription, no ads.</p>
+  <div class="cta-row" style="margin:-12px 0 8px"><a class="cta" href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8">Get PJ on the App Store</a><span class="cta-note">One purchase · every device · no subscription</span></div>
   <h2 class="group">Capture</h2>
   <p class="gsub">Just talk. Or type. Whatever's closest.</p>
   <div class="fgrid">
