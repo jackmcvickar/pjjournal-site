@@ -1,0 +1,10 @@
+# Deliberate "beta" / "TestFlight" mentions outside help.html (site-check.sh, check 3).
+# One per line:  file|exact phrase from the sentence
+# A hit is allowed when the phrase is on the same line; matched on file + phrase, not line number.
+# Anything on that line outside the phrase is still checked. Lines starting with # are ignored.
+faq.html|Already a beta tester? You can keep using the TestFlight version free
+faq.html|Beta testers can keep using the beta at no cost
+index.html|Beta testers can keep using the TestFlight version free
+privacy.html|Beta testing.
+privacy.html|TestFlight, Apple may share your name
+whats-new.html|Forty beta builds came before it
