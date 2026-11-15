@@ -5,7 +5,8 @@
 #   3. "beta" / "TestFlight" outside help.html, unless in site-check-allow.txt (WARNING only)
 #   4. "PROMO BANNER: remove after <date>" whose date has passed               (FAILS)
 #   5. the latest version in whats-new.html, to compare with the App Store     (FAILS if none found)
-# Bash only, no dependencies. Exit 1 if 1, 2, 4 or 5 fail; check 3 only warns.
+#   6. every page links home (href="/") in its top bar                         (FAILS)
+# Bash only, no dependencies. Exit 1 if 1, 2, 4, 5 or 6 fail; check 3 only warns.
 cd "$(dirname "$0")/.." || exit 2
 shopt -s nullglob
 FILES=(*.html)
@@ -90,7 +91,20 @@ if [ -f whats-new.html ]; then
   if [ -n "$v" ]; then echo "$v"; else echo "no \"Version x.y\" found"; fail=1; fi
 else echo "whats-new.html not found"; fail=1; fi
 
+echo; echo "== 6. Every page links home (href=\"/\") in its top bar =="
+# The top bar = from the first <header> or class="top" line to the first </header> after it.
+nohome=0
+for f in "${FILES[@]}"; do
+  if ! awk '!on && (/<header/ || /class="top"/) {on=1}
+            on && /href="\/"/ {ok=1}
+            on && /<\/header>/ {exit}
+            END {exit ok?0:1}' "$f"; then
+    echo "$f: no link to the home page (href=\"/\") in its top bar"; nohome=1
+  fi
+done
+if [ $nohome -eq 0 ]; then echo "all ${#FILES[@]} pages link home"; else fail=1; fi
+
 echo
-if [ $fail -ne 0 ]; then echo "SITE CHECK: FAILED (see 1, 2, 4 or 5 above)"; exit 1; fi
+if [ $fail -ne 0 ]; then echo "SITE CHECK: FAILED (see 1, 2, 4, 5 or 6 above)"; exit 1; fi
 [ $warn -ne 0 ] && { echo "SITE CHECK: OK, with warnings to review (3)"; exit 0; }
 echo "SITE CHECK: OK"

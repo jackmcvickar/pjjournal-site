@@ -51,6 +51,12 @@
 
   .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0 12px;background:var(--bg);border-bottom:1px solid var(--line)}
   .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.01em}
+  a.brand{text-decoration:none}
+  .topnav{display:flex;align-items:center;gap:14px}
+  nav.site{display:flex;gap:16px}
+  nav.site a{font-weight:700;font-size:15px;text-decoration:none}
+  nav.site a:hover{color:var(--pj-ink) !important}
+  @media (max-width:420px){.topnav{gap:10px}nav.site{gap:11px}nav.site a{font-size:14px}.brand small{display:none}}
   .mark{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--pj);color:#fff;font-weight:800;font-size:14px}
   .brand small{display:block;font-weight:600;font-size:11.5px;color:var(--muted);margin-top:-2px}
   .toggle{font:inherit;font-size:12.5px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
@@ -139,8 +145,11 @@
 <!-- MAINTENANCE: on every refresh, bump the "Updated <date> · Version N" line in header.hero to the current date and the current PUBLIC App Store version (not a TestFlight build), and add the new version's entry at the top of the Version history section. Release checklist item A1. -->
 <div class="wrap">
   <div class="top">
-    <div class="brand"><span class="mark pjdragon" role="img" aria-label="PJ dragon"></span><span>PJ<small>your journal</small></span></div>
-    <button class="toggle" id="themeBtn" type="button" aria-label="Switch light or dark">Theme</button>
+    <a class="brand" href="/" aria-label="PJ Journal home"><span class="mark pjdragon" role="img" aria-label="PJ dragon"></span><span>PJ<small>your journal</small></span></a>
+    <div class="topnav">
+      <nav class="site" aria-label="Site"><a href="/">Home</a><a href="features.html">Features</a><a href="faq.html">FAQ</a></nav>
+      <button class="toggle" id="themeBtn" type="button" aria-label="Switch light or dark">Theme</button>
+    </div>
   </div>
 
   <header class="hero">
@@ -671,7 +680,7 @@
   </section>
 
   <footer>
-    <span class="mark pjdragon" role="img" aria-label="PJ dragon"></span>PJ — your journal. This page stays current as PJ grows, so check back when something new lands. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="mailto:support@pjjournal.com">support@pjjournal.com</a>
+    <span class="mark pjdragon" role="img" aria-label="PJ dragon"></span>PJ — your journal. This page stays current as PJ grows, so check back when something new lands. &middot; <a href="/">Home</a> &middot; <a href="features.html">Features</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="mailto:support@pjjournal.com">support@pjjournal.com</a>
   </footer>
 </div>
 
