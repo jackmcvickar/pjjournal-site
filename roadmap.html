@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6815332769, affiliate-data=pt=129453941&amp;ct=website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PJ Journal Roadmap — what's here, what's next</title>
+<meta name="description" content="Where PJ Journal is headed: what's in each update, what's being tested now, and the bigger things ahead. Private, voice-first journaling for iPhone, iPad, Mac and Apple Watch.">
+<link rel="icon" type="image/png" sizes="32x32" href="pj-favicon-32.png">
+<link rel="apple-touch-icon" href="pj-apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pj:#5040c0;--pj-2:#6a4ad0;--ink:#1b1a24;--muted:#5c5a6e;--bg:#ffffff;--bg-soft:#f5f4fb;
+    --card:#ffffff;--line:#e7e5f2;--shadow:0 6px 24px rgba(40,30,100,.08);--maxw:800px}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f1f0f7;--muted:#a9a7bd;
+    --bg:#131220;--bg-soft:#1a1930;--card:#1c1b2e;--line:#2c2a44;--shadow:0 8px 30px rgba(0,0,0,.35);--pj-2:#8b70ef}}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo-word{font-family:"Poppins",-apple-system,sans-serif}
+  a{color:var(--pj-2);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1060px;margin:0 auto;padding:0 20px}
+  .logo{display:flex;align-items:center;gap:10px}.logo img{height:34px;width:auto;display:block}
+  nav a{color:var(--ink);font-weight:600;font-size:15.5px;margin-left:22px}nav a:hover{color:var(--pj-2);text-decoration:none}
+  .logo img.dark-logo{display:none}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo img.light-logo{display:none}
+    :root:not([data-theme="light"]) .logo img.dark-logo{display:block}}
+  h1{font-size:clamp(32px,5vw,46px);letter-spacing:-.02em;margin:46px 0 6px}
+  .intro{color:var(--muted);margin:0 0 30px;font-size:19px}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:14px 0;box-shadow:var(--shadow)}
+  .q h2{font-size:20px;margin:0 0 8px;letter-spacing:-.01em}
+  .q p{margin:0;color:var(--muted);font-size:16.5px}
+  .q p + p{margin-top:10px}
+  .callout{background:color-mix(in srgb,var(--pj) 9%,var(--card));border:1px solid var(--line);border-left:4px solid var(--pj);border-radius:12px;padding:16px 18px;margin:16px 0;color:var(--ink);font-size:16px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pj);color:#fff !important;font-family:"Poppins";font-weight:600;font-size:16px;padding:12px 22px;border-radius:999px;box-shadow:var(--shadow)}
+  .cta:hover{background:var(--pj-2);text-decoration:none}
+  .backhome{display:inline-block;margin:34px 0 0;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:15px;margin-top:40px}
+  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;max-width:1060px;margin:0 auto;padding:0 20px}
+  .foot a{color:var(--muted);font-weight:600;margin-right:18px}.foot a:hover{color:var(--pj-2)}
+  @media (max-width:560px){
+    .bar{height:56px}
+    .logo img{height:25px}
+    nav a{margin-left:15px;font-size:14px}
+    nav .nav-full{display:none}
+  }
+  h2.group{font-size:26px;margin:44px 0 4px;letter-spacing:-.015em}
+  .gsub{color:var(--muted);margin:0 0 12px}
+  .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .f h3{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+  .f p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  .plat{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:var(--pj-2);background:color-mix(in srgb,var(--pj) 10%,var(--card));border-radius:999px;padding:2px 10px}
+  @media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+
+  .hero2{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;margin:40px 0 10px}
+  .hero2 h1{margin-top:0}
+  .hero2 .shot{width:100%;max-width:300px;height:auto;justify-self:center;filter:drop-shadow(0 18px 36px rgba(40,30,100,.28))}
+  .cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+  .cta-note{color:var(--muted);font-size:15px}
+  @media (max-width:640px){.hero2{grid-template-columns:1fr;gap:18px;margin-top:28px}.hero2 .shot{max-width:220px}}
+
+  .badge{display:inline-block;line-height:0}.badge img{height:54px;width:auto;display:block}.badge:hover{opacity:.85}
+
+  .promo{background:#ffd54a;color:#2a2470;text-align:center;font-family:"Poppins",-apple-system,sans-serif;font-weight:600;font-size:15px;padding:9px 16px;line-height:1.4}
+  .promo a{color:#2a2470;text-decoration:underline}
+  .lane{margin:40px 0 0}
+  .lane-h{display:flex;align-items:center;gap:12px;margin:0 0 4px}
+  .lane-h h2{font-size:26px;margin:0;letter-spacing:-.015em}
+  .pill{font-family:"Poppins",sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 11px;white-space:nowrap}
+  .pill.done{background:#e2f2ea;color:#1f6f54}
+  .pill.test{background:#fff1cc;color:#7a5200}
+  .pill.later{background:color-mix(in srgb,var(--pj) 12%,var(--card));color:var(--pj-2)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pill.done{background:#14241d;color:#5fc79a}:root:not([data-theme="light"]) .pill.test{background:#2a2414;color:#e3b64f}}
+  .ver{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:12px 0;box-shadow:var(--shadow)}
+  .ver h3{font-size:17px;margin:0 0 2px}
+  .ver .when{color:var(--muted);font-size:14.5px;margin:0 0 6px}
+  .ver ul{margin:0;padding-left:20px;color:var(--muted);font-size:16px;line-height:1.5}
+  .ver li+li{margin-top:4px}
+  .f .status{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:var(--muted)}
+  .promise{margin-top:44px}
+</style>
+<meta property="og:title" content="PJ Journal Roadmap — what's here, what's next">
+<meta property="og:description" content="Where PJ Journal is headed: what's in each update, what's being tested now, and the bigger things ahead. Private, voice-first journaling for iPhone, iPad, Mac and Apple Watch.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pjjournal.com/roadmap.html">
+<meta property="og:url" content="https://pjjournal.com/roadmap.html">
+<meta property="og:image" content="https://pjjournal.com/pj-og-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PJ Journal Roadmap — what's here, what's next">
+<meta name="twitter:description" content="Where PJ Journal is headed: what's in each update, what's being tested now, and the bigger things ahead. Private, voice-first journaling for iPhone, iPad, Mac and Apple Watch.">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="/" aria-label="PJ Journal home">
+      <img class="light-logo" src="pj-logo.png" alt="PJ Journal"><img class="dark-logo" src="pj-logo-dark.png" alt="PJ Journal">
+    </a>
+    <nav><a href="/">Home</a><a href="faq.html">FAQ</a><a href="help.html">Help</a><a href="#join">Get<span class="nav-full"> PJ</span></a></nav>
+  </div>
+</header>
+<!-- PROMO BANNER: remove after Nov 30, 2026 -->
+<div class="promo">PJ is free through Thanksgiving. <a href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8">Get it on the App Store</a></div>
+
+
+<main class="wrap">
+  <h1>Where PJ is headed</h1>
+  <p class="intro">PJ is on the App Store today, and it's just getting started. Here's what each update has brought, what's being tested right now, and the bigger things ahead. No dates on the far-off items. They ship when they're ready and private.</p>
+
+  <section class="lane">
+    <div class="lane-h"><h2>Out now</h2><span class="pill done">On the App Store</span></div>
+    <p class="gsub">What's in the version you download today. Full details on <a href="whats-new.html">What's new</a>.</p>
+    <div class="ver"><h3>Version 1.1</h3><p class="when">October 2026 · iPhone, iPad and Mac</p>
+      <ul><li>Seven service-color app icons for the PJ dragon.</li><li>A reminder to save your recovery key, so your journal can always come back to you.</li><li>Recordings that were interrupted now finish writing themselves.</li></ul></div>
+    <div class="ver"><h3>Version 1.0</h3><p class="when">October 23, 2026 · iPhone, iPad, Mac and Apple Watch</p>
+      <ul><li>Talk or type, and PJ writes it down on your device.</li><li>End-to-end encrypted in your own iCloud, with a lock on top.</li><li>Forty beta builds came before it. <a href="features.html">See everything PJ does</a>.</li></ul></div>
+  </section>
+
+  <section class="lane">
+    <div class="lane-h"><h2>Being tested now</h2><span class="pill test">Coming next</span></div>
+    <p class="gsub">Built and in the hands of beta testers. These come to everyone in an upcoming update.</p>
+    <div class="fgrid">
+      <div class="f"><h3>Pause and pick up</h3><p>Pause a recording when the phone rings, then keep going in the same entry instead of starting over.</p><span class="plat">iPhone · iPad</span></div>
+      <div class="f"><h3>File it on the right day</h3><p>Write today about something from last week, and PJ puts it where it belongs in your timeline and On this day.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>More looks</h3><p>New app icons for first responders and professions, and on the Mac, pick the look that sits in your Dock.</p><span class="plat">iPhone · iPad · Mac</span></div>
+      <div class="f"><h3>Even steadier recordings</h3><p>Long recordings stopped from the Lock Screen land right in your journal, and saving shows clearly that you're done.</p><span class="plat">iPhone · iPad</span></div>
+    </div>
+  </section>
+
+  <section class="lane">
+    <div class="lane-h"><h2>What we're working toward</h2><span class="pill later">Later</span></div>
+    <p class="gsub">The bigger ideas. Every one of them is optional. Leave them off and PJ stays a quiet, private journal.</p>
+    <div class="fgrid">
+      <div class="f"><h3>Talk about your photos</h3><p>Record a voice note right on a photo, so the story behind a picture is kept in the voice of the person telling it.</p><span class="status">In progress</span></div>
+      <div class="f"><h3>Share one entry, on purpose</h3><p>Send a single recording or entry to someone you choose. One item, one person, only when you decide.</p><span class="status">Planned</span></div>
+      <div class="f"><h3>From words to done</h3><p>Say "remind me to call Mom Thursday" in an entry and PJ offers to add it to your calendar or reminders. It always asks first.</p><span class="status">Exploring</span></div>
+      <div class="f"><h3>A journal that knows you</h3><p>Over time, PJ can help you see the people, themes and patterns in your own words, worked out on your own device.</p><span class="status">Exploring</span></div>
+      <div class="f"><h3>Someone to talk with</h3><p>The PJ dragon gets a voice, so you can talk with your journal and not just into it. Company and a mirror, not a replacement for people or professional help.</p><span class="status">Exploring</span></div>
+      <div class="f"><h3>For families</h3><p>Easier ways to record a parent's or grandparent's stories and keep them together. <a href="save-their-stories.html">See how people do it today</a>.</p><span class="status">Exploring</span></div>
+    </div>
+  </section>
+
+  <section class="promise">
+    <div class="callout"><strong>What won't change.</strong> Your words stay yours: end-to-end encrypted, with a key only your devices hold. No accounts, no ads, nothing collected. One purchase, no subscription. If a future feature ever needs anything more, it will be off until you turn it on, and we'll say so plainly before it ships.</div>
+  </section>
+
+  <p style="margin-top:26px">Have an idea for PJ? Send it to <a href="mailto:support@pjjournal.com">support@pjjournal.com</a>. A lot of what's above started as a tester's email.</p>
+  <div class="cta-row" style="margin-top:14px"><a class="badge" href="https://apps.apple.com/app/apple-store/id6815332769?pt=129453941&amp;ct=website&amp;mt=8"><img src="/img/app-store-badge-black.svg" alt="Download on the App Store" width="162" height="54"></a><span class="cta-note">iPhone · iPad · Mac · Apple Watch · App Store privacy label: Data Not Collected</span></div>
+  <a class="backhome" href="/">&larr; Back to pjjournal.com</a>
+</main>
+
+<footer>
+  <div class="foot">
+    <div><a href="/">Home</a><a href="features.html">Features</a><a href="military-families.html">Military families</a><a href="icons.html">Icons</a><a href="whats-new.html">What&#39;s new</a><a href="roadmap.html">Roadmap</a><a href="help.html">Help &amp; guide</a><a href="privacy.html">Privacy</a><a href="mailto:support@pjjournal.com">support@pjjournal.com</a></div>
+    <div>© 2026 PJ Journal</div>
+  </div>
+</footer>
+</body>
+</html>

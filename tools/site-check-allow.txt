@@ -8,3 +8,4 @@ index.html|Beta testers can keep using the TestFlight version free
 privacy.html|Beta testing.
 privacy.html|TestFlight, Apple may share your name
 whats-new.html|Forty beta builds came before it
+roadmap.html|Built and in the hands of beta testers
