@@ -53,7 +53,7 @@
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="intro">PJ Talk &mdash; messages for two &middot; Effective November 15, 2026</p>
+  <p class="intro">PJ Talk &mdash; messages for two &middot; Effective November 16, 2026</p>
 
   <div class="callout"><strong>The short version:</strong> PJ Talk doesn't collect your data. Your conversation lives in iCloud, in a space shared with the one person you invite, and PJ Talk has no server and no database of its own. The only time it talks to anything other than iCloud is to fetch the preview of a web link in a message, and that request goes from your device to that website. PJ Talk does keep a short health report (numbers, codes and times, never a message) in the conversation's iCloud space, where the other person's PJ Talk can read it; a switch turns it off. No ads, no analytics, no tracking.</div>
 
@@ -79,7 +79,7 @@
       <li><strong>The sending summary:</strong> for the last seven days, how many texts, photos, videos and voice messages were sent and how many photos, videos and voice messages were downloaded, by kind of connection (Wi-Fi, cellular, other), with the typical and the slowest time and speed; and for the few slowest of the last day, the kind, the size in megabytes, the length in seconds, the video quality, the kind of connection and how long it took. It holds no message, no file name, and nothing that points to a particular message.</li>
       <li><strong>What is never in it:</strong> a message, a name, a photo, a place, a file name or any text you wrote. The crash and hang counts come from Apple's on-device diagnostics (MetricKit); PJ Talk keeps only the kind, the count and the time from them, never a crash log.</li>
       <li><strong>You can see all of it:</strong> Settings &rarr; Health &rarr; "What is shared" lists every value exactly as it is written.</li>
-      <li><strong>The switch:</strong> "Share app health" in Settings &rarr; Health. It is on to begin with. Turned off, your device writes one report that says only "off" (with the build number, device kind and system version) and then nothing more; the other person can see that it is off.</li>
+      <li><strong>The switch:</strong> "Share app health with" followed by the other person's name, in Settings &rarr; Health. It is on to begin with. Turned off, your device writes one report that says only "off" (with the build number, device kind and system version) and then nothing more; the other person can see that it is off.</li>
       <li><strong>How long it is kept:</strong> there is one report per person per kind of device and each new one replaces the last, so iCloud holds only the latest. The Mac app also keeps the latest report it has seen from each device in its own folder on that Mac. Both go when the conversation's iCloud data, or the app, is deleted.</li>
     </ul></div>
 
@@ -96,14 +96,14 @@
       <li><strong>iCloud</strong>, for everything above: your messages, sharing, and the notification that a new message is waiting.</li>
       <li><strong>Web links.</strong> When a message contains a link, your device fetches that page's title and picture to show a preview card, the way Messages does. That request goes from your device straight to that website, so the site sees a visit from you, as it would when you open the link. There is no preview service in between, and the preview is kept on your device only, not in iCloud, and each device fetches its own. There is no setting to turn previews off yet.</li>
     </ul>
-    <p style="margin-top:10px">That is all. Transcription, search, link previews and everything else that could involve your words runs on your device. To choose a video's quality PJ Talk looks at whether the device is on Wi-Fi or cellular; that is read on the device and goes nowhere except, as a word ("wifi", "cellular"), into the sending summary above.</p></div>
+    <p style="margin-top:10px">That is all. Transcription, search, link previews and everything else that could involve your words runs on your device. To choose a video's quality PJ Talk looks at whether the device is on Wi-Fi or cellular, whether iOS marks the Wi-Fi as metered (a hotspot), and how fast its own last few large transfers were; that is read on the device and goes nowhere except, as a word ("wifi", "cellular"), into the sending summary above.</p></div>
 
   <div class="q"><h2>Permissions PJ Talk asks for</h2>
     <ul>
       <li><strong>Camera and microphone:</strong> to record the photos, videos and voice messages you send. Only while you record.</li>
       <li><strong>Speech recognition:</strong> to turn your voice messages into words. This happens on your iPhone, using Apple's on-device recognizer; the sound never leaves your phone for this and there is no fallback to a server. Your own words are saved with the message in iCloud so the other person can read them. Words made on your phone for the other person's messages stay on your phone. Both are optional, in Settings &rarr; Transcripts.</li>
       <li><strong>Photos:</strong> choosing a photo or video to send, or to add to Our album, uses Apple's photo picker, so PJ Talk only sees the items you pick and needs no access to your library. "Save to Photos" asks for add-only access, which lets PJ Talk add to your library without seeing it. Our album's "Remove from Photos", which deletes the originals you already brought into the album, asks for access to your library when you use it, and that is the only time PJ Talk asks. If you have given that access, PJ Talk also uses it for one more thing: when you add a picture that carries no date of its own, it looks up the date Photos has for that one picture. It never looks through your library.</li>
-      <li><strong>Face ID:</strong> only if you turn on "Ask for Face ID" for Most special (below). The check is done by iOS; PJ Talk learns only whether it passed and never sees your face data or your passcode.</li>
+      <li><strong>Face ID:</strong> only if you turn on App Lock or "ask before Most special opens" (both below). The check is done by iOS; PJ Talk learns only whether it passed and never sees your face data. PJ Talk never asks for the phone's passcode.</li>
       <li><strong>Notifications:</strong> a new message arrives as a plain "New message" alert; the words shown on your Lock Screen are fetched from iCloud by your phone, and "Hide previews" keeps them off it. On the Mac, a small helper that is part of PJ Talk runs when a message notification arrives: it asks iCloud whether there is anything new from the other person in the last few minutes and, if there is not (for example it was your own message, sent from your iPhone), makes the alert silent. It only reads, saves nothing, and talks to nothing but iCloud. The recording timer on the Lock Screen and in the Dynamic Island is made on your phone and never pushed anywhere.</li>
     </ul>
     <p style="margin-top:10px">PJ Talk never asks for your contacts, location, calendar or health data. Every permission can be changed any time in Settings.</p></div>
@@ -111,11 +111,24 @@
   <div class="q"><h2>What the other person can see</h2>
     <p>Only what you choose: whether you're in the app, when you're typing or recording, your last active time, and when you've read or played their messages. Each of these is a switch in Settings &rarr; Privacy, and the other person's phone honours it.</p></div>
 
-  <div class="q"><h2>Most special and Face ID</h2>
+  <div class="q"><h2>App Lock</h2>
+    <p>You can lock PJ Talk on your iPhone with a 4-digit PIN (Settings &rarr; App Lock). It is optional and off to begin with.</p>
+    <ul>
+      <li><strong>What it is:</strong> a cover over PJ Talk on that phone: when the app opens, when you leave it, after a time you choose, or when you tap Lock Now. It hides the screen. It does not encrypt anything, and turning it off never loses a message.</li>
+      <li><strong>How it opens:</strong> your PIN, or Face ID / Touch ID if you leave that on. Never the phone's own passcode. The Face ID check is done by iOS; PJ Talk learns only whether it passed.</li>
+      <li><strong>What is stored:</strong> not the PIN. A scrambled check of it (a salted hash) is kept in the iPhone's keychain, on that phone only; it is never sent to iCloud and never leaves the device. Whether a lock exists (yes or no) is shared with PJ Talk's own notification helper on the same phone.</li>
+      <li><strong>If you forget the PIN:</strong> PJ Talk shows a recovery code once when you set the PIN, for you to write down. It keeps only a scrambled check of that too. The code turns the PIN off and changes nothing else. Without the code, deleting PJ Talk and installing it again also removes the PIN; your messages are in iCloud and come back.</li>
+      <li><strong>Wrong PINs:</strong> after five wrong PINs in a row PJ Talk makes you wait before the next try (30 seconds, then 1 minute, then 5 minutes). The count is kept on your phone only. Nothing is ever erased or locked for good; Face ID and the recovery code still work during a wait.</li>
+      <li><strong>Notifications:</strong> with a PIN set, new-message alerts say "New message" without the words, unless you turn "Show message text in notifications" on.</li>
+      <li><strong>A fresh check for a few things:</strong> with a PIN set, PJ Talk asks for it again (or Face ID) before the lock is changed or turned off, before a conversation is deleted or left, and before a Most special item is saved or shared.</li>
+    </ul>
+    <p style="margin-top:10px">The lock is on the iPhone only for now; the Mac app has none yet.</p></div>
+
+  <div class="q"><h2>Most special</h2>
     <p>A favorite (star) and a Most special (heart) mark are part of the conversation, so both of you can see them. Two optional settings in Settings &rarr; Privacy apply to your own iPhone only, are stored only on that iPhone, and are not told to the other person:</p>
     <ul>
       <li><strong>Keep Most special out of the main library:</strong> your Most special items then show only under the Most special filter on your phone, and their marks are not shown in the chat on your phone.</li>
-      <li><strong>Ask for Face ID to open Most special:</strong> iOS checks Face ID (or Touch ID) before the filter opens. If that does not succeed, iOS offers the device passcode instead, so anyone who knows the phone's passcode can open it. If the phone has no passcode at all, there is nothing to check and it opens.</li>
+      <li><strong>Ask before Most special opens:</strong> Face ID / Touch ID, or your PJ Talk PIN if you have set one. Never the phone's own passcode. With neither Face ID nor a PIN on the phone, this cannot be turned on. Turning either of these two settings off asks the same way first.</li>
     </ul>
     <p style="margin-top:10px">These settings hide things on your phone's screen. They do not add encryption, and they do not change what the other person sees on theirs.</p></div>
 
